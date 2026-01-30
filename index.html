@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Javier Fernández Gavino</title>
+    <meta name="description" content="Portfolio de estudiante de Desarrollo Multiplataforma" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado__contenido">
+            <div class="logo">
+                <div class="logo-animado">JF</div>
+            </div>
+
+            <nav class="navegacion">
+                <a href="#inicio">inicio</a>
+                <a href="#sobre-mi">sobre-mi</a>
+                <a href="#proyectos">proyectos</a>
+                <a href="#contacto">contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="portada">
+        <div class="circulo-flotante"></div>
+
+        <div class="contenedor portada__contenido">
+            <h1 class="titulo-portada">Javier Fernández<br>Gavino</h1>
+            <p class="subtitulo-portada">
+                Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM).<br>
+                Enfocado en <span class="texto-resaltado">mejorar cada día</span>.
+            </p>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Sobre Mí</h2>
+
+            <div class="texto-introduccion">
+                <p>
+                    Soy un <span class="texto-resaltado">Desarrollador en formación</span>. Me considero un entusiasta
+                    de la tecnología con
+                    ganas de aprender y crecer en el campo del desarrollo de software.
+                </p>
+                <p>
+                    Estoy buscando oportunidades de <span class="texto-resaltado">Prácticas</span> donde pueda
+                    contribuir, aprender y
+                    crecer. Si tienes una buena oportunidad, no dudes en contactarme.
+                </p>
+            </div>
+
+            <h3 class="subtitulo-seccion">Mis Habilidades</h3>
+
+            <div class="grid-habilidades">
+                <div class="tarjeta-habilidad">HTML5</div>
+                <div class="tarjeta-habilidad">CSS3</div>
+                <div class="tarjeta-habilidad">JavaScript</div>
+                <div class="tarjeta-habilidad">Java</div>
+                <div class="tarjeta-habilidad">SQL</div>
+                <div class="tarjeta-habilidad">Git</div>
+                <div class="tarjeta-habilidad">Responsive Design</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Proyectos</h2>
+            <div class="grid-proyectos">
+                <div class="tarjeta-proyecto">
+                    <div class="marco-imagen">
+                        <img src="carta-bar.png" alt="Captura Carta Bar">
+                    </div>
+                    <div class="info-proyecto">
+                        <h3>Carta de Bar</h3>
+                        <p class="desc-proyecto">Sitio web estático creado utilizando HTML y CSS. Incluye diseño
+                            adaptable (responsive).</p>
+                        <a href="https://github.com/jfh98/carta-bar" target="_blank" class="enlace-proyecto">Ver en
+                            GitHub</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-proyecto">
+                    <div class="marco-imagen">
+                        <img src="personaje-java.png" alt="Captura RPG Java">
+                    </div>
+                    <div class="info-proyecto">
+                        <h3>RPG Core Engine</h3>
+                        <p class="desc-proyecto">Simulador de combate por turnos en Java. Implementa herencia,
+                            polimorfismo e inventario.
+                            Las funcionalidades irán aumentando conforme avancen mis estudios.</p>
+                        <a href="https://github.com/jfh98/ProyectoPersonaje" target="_blank" class="enlace-proyecto">Ver
+                            en GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion seccion-contacto">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <p class="contacto-subtitulo">
+                ¿Tienes una oportunidad de prácticas? No dudes en contactarme.
+            </p>
+
+            <div class="contenedor-formulario">
+                <form action="https://formspree.io/f/mzdddraa" method="POST" class="formulario">
+                    <div class="grupo-input">
+                        <label for="name">Nombre</label>
+                        <input required placeholder="Tu Nombre" type="text" name="name" id="name" />
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="email">Email</label>
+                        <input required placeholder="Tu Email" type="email" name="email" id="email" />
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="message">Mensaje</label>
+                        <textarea required rows="5" placeholder="Escribe tu mensaje..." name="message"
+                            id="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">
+                        <span class="subrayado-grueso violeta">ENVIAR MENSAJE</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="enlaces-sociales">
+                <a href="https://github.com/jfh98" target="_blank">GitHub <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026. Javier Fernández Gavino.</p>
+    </footer>
+</body>
+
+</html>
